@@ -1,1 +1,1 @@
-# LS215 Computation Thinking and Problem Solving
+# LS215 Computational Thinking and Problem Solving
