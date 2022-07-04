@@ -5,7 +5,7 @@ Problem
 Inputs: 
 Outputs: 
 
-Rules/Requirements
+Requirements
 - 
 
 Clarifying Questions
