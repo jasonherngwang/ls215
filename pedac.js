@@ -5,7 +5,7 @@ Problem
 Inputs: 
 Outputs: 
 
-Requirements
+Requirements (explicit, implicit)
 - 
 
 Clarifying Questions
@@ -15,7 +15,10 @@ Examples, Test Cases
 ------------------------------------------
 
 
-Data Structure, Algorithm
+Data Structure
+------------------------------------------
+
+Algorithm
 ------------------------------------------
 
 */

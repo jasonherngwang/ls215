@@ -102,7 +102,7 @@ function calcChecksum(numberString) {
     digits[i] = doubledDigit < 10 ? doubledDigit : doubledDigit - 9;
   }
 
-  return digits.reduce((sum, num) => sum + num);
+  return digits.reduce((sum, num) => sum + num, 0);
 }
 
 function checkLuhn(numberString) {
@@ -160,7 +160,7 @@ function createValidLuhn(numberString) {
   if (checkLuhn(numberString)) return numberString;
 
   let checksum = calcChecksum(cleanedNum + '0') % 10;
-  if (checksum === 0) return cleanedNum + '0';
+  if (checksum === 0) return cleanedNum + '0'; // Empty string will return 10 - 0 => '10'; should return '0'
   return cleanedNum + String(10 - checksum);
 }
 
