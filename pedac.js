@@ -2,14 +2,20 @@
 Problem
 ------------------------------------------
 
+
 Inputs: 
 Outputs: 
 
-Requirements (explicit, implicit)
+Rules, Requirements, Definitions
 - 
+
 
 Clarifying Questions
 - 
+
+Edge Cases
+- 
+
 
 Examples, Test Cases
 ------------------------------------------
@@ -18,7 +24,9 @@ Examples, Test Cases
 Data Structure
 ------------------------------------------
 
+
 Algorithm
 ------------------------------------------
+
 
 */

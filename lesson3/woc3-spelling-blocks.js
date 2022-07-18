@@ -51,6 +51,7 @@ Algorithm
 - Copy the spelling block data, so we can mutate it.
 - If the word contains any non-letter characters, it cannot be spelled using
   the blocks. Return false.
+  - if (/[^a-z]/i.test(word)) return false;
 - Upcase the word, since spelling block data object is uppercase.
 - Iterate through the characters in the word.
   - Check if the character exists as a key in the blocks object, by attempting
@@ -98,12 +99,12 @@ const BLOCKS = {
 
 function isBlockWord(word) {
   let blocks = Object.assign({}, BLOCKS);
-  if (/[^a-z]/i.test(word)) return false;
+
   for (let char of word.toUpperCase()) {
-    let blockReverseSide = blocks[char];
-    if (!blockReverseSide) return false;
+    let blockReverseChar = blocks[char];
+    if (!blockReverseChar) return false;
     delete blocks[char];
-    delete blocks[blockReverseSide];
+    delete blocks[blockReverseChar];
   }
 
   return true;
